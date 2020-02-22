@@ -1,0 +1,7 @@
+<h2>CRISIS CENTER</h2>
+<nav>
+  <a [routerLink]="[{ outlets: { popup2: ['sidebar'] } }]">Open Sidebar</a>
+</nav>
+
+<router-outlet></router-outlet>
+<router-outlet name="popup2">popup2</router-outlet>

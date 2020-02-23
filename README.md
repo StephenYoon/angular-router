@@ -1,7 +1,7 @@
 # Angular Router
 An application illustrating Angular's routing capabilities.
 
-`master` branch lazy loads `crisis-center` module within `app-routing.module.ts` and within `crisis-center` we implement named routing. However we found that named routing doesn't work very well (ie not at all).
+`master` branch lazy loads `crisis-center` module within `app-routing.module.ts` and within `crisis-center` we implement named routing. However we found that named routing doesn't work very well if the module it's contained in is lazy loaded.
 
 `no-lazy-loading-module` branch, we load all components within the `app.module.ts` and all routing with `app-routing.module.ts`. We found that named routing works!  Mystery: with modules that lazy load, named routing doesn't seem to work.
 

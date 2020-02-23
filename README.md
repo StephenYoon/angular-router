@@ -8,6 +8,6 @@ An application illustrating Angular's routing capabilities.
 ## Enabling named route in the main app.component
 - click on "Contact" or "Mainbar" to load the named route on the main app.component.
 
-## Enabling named route in the nested child component (lazy loaded in `master` branch)
+## Enabling named route in the nested child component
 - click on "Crisis Center" on the top and in this component click on "Open Sidebar"
-- in the branch `no-lazy-loading-module` this works fine but in the master branch, not so much
+- in the branch `no-lazy-loading-module` this works fine but in the `master` branch, not so much

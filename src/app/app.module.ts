@@ -2,6 +2,7 @@ import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule }   from '@angular/common';
 
 import { Router } from '@angular/router';
 
@@ -14,6 +15,15 @@ import { HeroesModule }            from './heroes/heroes.module';
 import { AuthModule }              from './auth/auth.module';
 import { MainbarComponent } from './mainbar/mainbar.component';
 
+
+//import { CrisisCenterModule } from './crisis-center/crisis-center.module';
+import { CrisisCenterHomeComponent } from './crisis-center/crisis-center-home/crisis-center-home.component';
+import { CrisisListComponent }       from './crisis-center/crisis-list/crisis-list.component';
+import { CrisisCenterComponent }     from './crisis-center/crisis-center/crisis-center.component';
+import { CrisisDetailComponent }     from './crisis-center/crisis-detail/crisis-detail.component';
+//import { CrisisCenterRoutingModule } from './crisis-center/crisis-center-routing.module';
+import { SidebarComponent } from './crisis-center/sidebar/sidebar.component';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -22,12 +32,19 @@ import { MainbarComponent } from './mainbar/mainbar.component';
     HeroesModule,
     AuthModule,
     AppRoutingModule,
+    CommonModule
   ],
   declarations: [
     AppComponent,
     ComposeMessageComponent,
     PageNotFoundComponent,
-    MainbarComponent
+    MainbarComponent,
+
+    CrisisCenterHomeComponent,
+    CrisisListComponent,
+    CrisisCenterComponent,
+    CrisisDetailComponent,
+    SidebarComponent
   ],
   exports: [
     MainbarComponent

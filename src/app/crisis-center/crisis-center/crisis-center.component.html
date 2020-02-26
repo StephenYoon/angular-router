@@ -3,5 +3,6 @@
   <a [routerLink]="[{ outlets: { popup2: ['sidebar'] } }]">Open Sidebar</a>
 </nav>
 
-<router-outlet></router-outlet>
-<router-outlet name="popup2">popup2</router-outlet>
+<div style="outline: 1px solid green; margin: 5px; padding: 5px;"><router-outlet></router-outlet></div>
+
+<div style="outline: 1px solid red; margin: 5px; padding: 5px;"><router-outlet name="popup2">popup2</router-outlet></div>

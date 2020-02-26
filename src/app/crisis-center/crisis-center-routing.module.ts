@@ -10,22 +10,16 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { CanDeactivateGuard }             from '../can-deactivate.guard';
 import { CrisisDetailResolverService }    from './crisis-detail-resolver.service';
 
-const crisisCenterRoutes: Routes = [
+const crisisCenterRoutes: Routes = [ 
   {
-    path: 'sidebar',
-    component: SidebarComponent,
-    outlet: 'popup2'
-  },
-  
-  {
-    path: 'foo',
-    component: SidebarComponent,
-  },
-  
-  {
-    path: '',
+    path: 'main',
     component: CrisisCenterComponent,
     children: [
+      {
+        path: 'sidebar',
+        component: SidebarComponent,
+        outlet: 'popup2'
+      },
       {
         path: '',
         component: CrisisListComponent,
